@@ -1,0 +1,948 @@
+  @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300&display=swap');
+
+
+  *,
+  *::after,
+  *::before {
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+  }
+
+  .hide {
+      display: none;
+  }
+
+  html,
+  body {
+      width: 100%;
+      min-height: 100vh;
+      overflow-x: hidden;
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+
+  }
+
+  body {
+      font-family: 'Poppins', sans-serif;
+  }
+
+  img {
+      width: 100% !important;
+      height: auto !important;
+  }
+
+  a {
+      text-decoration: none;
+      margin: 0px;
+      padding: 0px;
+      transition: all .3s ease-in-out;
+  }
+
+  a,
+  p,
+  h1.h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  div,
+  span,
+  ul,
+  ol,
+  li,
+  table,
+  tr,
+  td,
+  th {
+      margin: 0px;
+      padding: 0px;
+  }
+
+
+
+
+  .top-header-address {
+      background: #001743;
+      text-align: center;
+      padding: 20px 0px;
+
+      .heading-title {
+          margin-bottom: 10px;
+
+          h2 {
+              font-family: 'Titillium Web', sans-serif;
+              color: #fff;
+              font-weight: 900;
+              font-size: 36px;
+              line-height: 36px;
+              display: inline-block;
+              text-transform: uppercase;
+              background: #008aeb;
+              padding: 14px 12px;
+              width: 763px;
+              max-width: 100%;
+              margin: 0 auto;
+          }
+      }
+
+      p {
+          font-family: 'Titillium Web', sans-serif;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 43px;
+          color: #fff;
+      }
+
+  }
+
+  .danaheader.header {
+      position: relative;
+
+      nav {
+          display: block
+      }
+
+      img {
+          vertical-align: middle
+      }
+
+      .sr-only {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          padding: 0;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          border: 0
+      }
+
+      .sr-only-focusable:active,
+      .sr-only-focusable:focus {
+          position: static;
+          width: auto;
+          height: auto;
+          margin: 0;
+          overflow: visible;
+          clip: auto
+      }
+
+      .container {
+          margin-right: auto;
+          margin-left: auto;
+          padding-left: 12px;
+          padding-right: 12px
+      }
+
+      @media(min-width:768px) {
+          .container {
+              width: 744px
+          }
+      }
+
+      @media(min-width:992px) {
+          .container {
+              width: 964px
+          }
+      }
+
+      @media(min-width:1224px) {
+          .container {
+              width: 1200px
+          }
+      }
+
+      .container-fluid {
+          margin-right: auto;
+          margin-left: auto;
+          padding-left: 12px;
+          padding-right: 12px
+      }
+
+      .row {
+          margin-left: -12px;
+          margin-right: -12px
+      }
+
+      .nav {
+          margin-bottom: 0;
+          padding-left: 0;
+          list-style: none
+      }
+
+      .nav>li {
+          position: relative;
+          display: block
+      }
+
+      .nav>li>a {
+          position: relative;
+          display: block;
+          padding: 10px 15px
+      }
+
+      .nav>li>a:hover,
+      .nav>li>a:focus {
+          text-decoration: none;
+          background-color: #eee
+      }
+
+      .nav>li.disabled>a {
+          color: #777
+      }
+
+      .nav>li.disabled>a:hover,
+      .nav>li.disabled>a:focus {
+          color: #777;
+          text-decoration: none;
+          background-color: transparent;
+          cursor: not-allowed
+      }
+
+      .nav .open>a,
+      .nav .open>a:hover,
+      .nav .open>a:focus {
+          background-color: #eee;
+          border-color: #337ab7
+      }
+
+      .nav .nav-divider {
+          height: 1px;
+          margin: 10px 0;
+          overflow: hidden;
+          background-color: #e5e5e5
+      }
+
+      .nav>li>a>img {
+          max-width: none
+      }
+
+      .nav:before,
+      .nav:after {
+          content: " ";
+          display: table
+      }
+
+      .nav:after {
+          clear: both
+      }
+
+      .hide {
+          display: none !important
+      }
+
+      .show {
+          display: block !important
+      }
+
+      .header-logo-container {
+          text-align: center;
+          margin: 8px auto 0
+      }
+
+      .header-logo {
+          display: inline-block;
+          max-width: 100%
+      }
+
+      .header-logo img {
+          display: block;
+          margin: 0 auto;
+          max-width: 100%
+      }
+
+      .header-reviews-rating {
+          padding-top: 35px;
+          text-align: center
+      }
+
+      .header-keywords {
+          display: block;
+          margin: 0 auto;
+          color: #252525;
+          font: 300 1.125em/1.4em 'Titillium', Arial, Sans-Serif;
+          text-transform: capitalize;
+          vertical-align: middle;
+          text-align: center
+      }
+
+      .header-review-info {
+          display: inline-block;
+          margin: 0 0 0 10px;
+          padding: 0 0 0 90px;
+          background: url(/Themes/Automotive/Assets/images/max-stars.png) no-repeat top 2px left;
+          vertical-align: middle
+      }
+
+      .header-reviews-rating a {
+          color: #252525;
+          font: 400 .875em/1.4em 'Titillium', Arial, sans-serif;
+          text-decoration: underline
+      }
+
+      .header-reviews-rating a:hover {
+          text-decoration: none
+      }
+
+      .header-location-info {
+          background: #0d3967
+      }
+
+      .header-phone-link {
+          display: inline-block;
+          padding: 10px 0 14px 50px;
+          background: url(/Themes/Automotive/Assets/images/phone-icon.png) no-repeat left 10px top 15px;
+          color: #fff;
+          font: 900 1.5em/1.4 'titillium', Verdana, Sans-serif;
+          text-transform: uppercase;
+          text-decoration: none
+      }
+
+      .header-phone-link strong {
+          font: inherit
+      }
+
+      .header-phone-link:hover,
+      .header-phone-link:focus {
+          color: #eaeaea;
+          text-decoration: none
+      }
+
+      .btn-appointments {
+          display: block;
+          margin-bottom: 0;
+          border-radius: 0;
+          padding-left: 38px;
+          background: #008aeb url(/Themes/Automotive/Assets/images/appointments-icon.png) no-repeat left 10px center;
+          font-size: 1.0625em
+      }
+
+      .btn-appointments:hover,
+      .btn-appointments:focus {
+          background: #008aeb url(/Themes/Automotive/Assets/images/appointments-icon.png) no-repeat left 10px center;
+          color: #252525
+      }
+
+      .nav-section {
+          margin-top: 35px
+      }
+
+      .nav-trigger {
+          display: block;
+          padding: 10px;
+          width: 50px;
+          height: 45px;
+          background: none
+      }
+
+      .nav-trigger .icon,
+      .nav-trigger .icon:before,
+      .nav-trigger .icon:after {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 20%;
+          background: #fff;
+          content: "";
+          font-size: 0;
+          border-radius: 5px
+      }
+
+      .nav-trigger .icon:before {
+          top: -200%;
+          height: 100%
+      }
+
+      .nav-trigger .icon:after {
+          bottom: -100%;
+          height: 100%
+      }
+
+      .nav {
+          z-index: 500;
+          position: relative;
+          width: 100%;
+          height: auto
+      }
+
+      .nav ul {
+          list-style: none;
+          text-align: center
+      }
+
+      .nav li {
+          position: relative
+      }
+
+      .nav li:hover>ul,
+      .nav li:focus>ul,
+      .nav li:active>ul {
+          display: block
+      }
+
+      .nav a {
+          display: inline-block;
+          text-decoration: none
+      }
+
+      .nav li.static {
+          display: inline-block
+      }
+
+      .nav li.static {
+          margin: 0 20px;
+          padding: 8px 0
+      }
+
+      .nav li.static>a {
+          color: #252525;
+          font: 300 1.0625em/1.2em 'Titillium', Arial, sans-serif
+      }
+
+      .nav li.static:first-child {
+          margin-left: 0
+      }
+
+      .nav li.static:last-child {
+          margin-right: 0
+      }
+
+      .nav li.static:hover>a,
+      .nav li.static:focus>a,
+      .nav li.static:active>a,
+      .nav li.static a.selected {
+          color: #008aeb;
+          text-decoration: none
+      }
+
+      .nav ul.dynamic {
+          z-index: 100;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          display: none;
+          min-width: 220px;
+          background: #008aeb
+      }
+
+      .nav li.dynamic {
+          display: block;
+          text-align: left
+      }
+
+      .nav li.dynamic.has-dynamic {
+          padding-right: 15px
+      }
+
+      .nav li.dynamic>a {
+          padding: 10px 20px;
+          width: 100%;
+          color: #fff;
+          font: 400 1em/1.2em 'titillium', Arial, sans-serif;
+          text-decoration: none
+      }
+
+      .nav li.dynamic:hover>a,
+      .nav li.dynamic:focus>a,
+      .nav li.dynamic:active>a,
+      .nav li.dynamic>a.selected {
+          color: #252525
+      }
+
+      .nav ul.dynamic ul {
+          top: 0;
+          left: 100%;
+          min-width: 100%
+      }
+
+      .nav li.static:last-child ul {
+          left: -100% !important
+      }
+
+      .container-xl {
+          max-width: 1596px;
+          margin: auto
+      }
+
+      @media(min-width:1224px) and (max-width:1600px) {
+          .header-phone-link {
+              display: block;
+              padding: 10px 0 15px;
+              background: none;
+              text-align: center
+          }
+
+          .btn-appointments {
+              display: block;
+              padding: 10px 0 15px;
+              background: #008aeb;
+              text-align: center
+          }
+
+          .btn-appointments:hover {
+              background: #008aeb
+          }
+      }
+
+      @media(min-width:992px) and (max-width:1223px) {
+          .btn-appointments {
+              padding-left: 12px;
+              background: #008aeb
+          }
+
+          .btn-appointments:hover,
+          .btn-appointments:focus {
+              background: #008aeb
+          }
+      }
+
+      @media(min-width:992px) {
+          .nav-trigger {
+              display: none
+          }
+
+          .nav-section ul.dynamic>.has-dynamic:before {
+              content: "";
+              position: absolute;
+              top: 12px;
+              right: 5px;
+              display: block;
+              border: 5px solid transparent;
+              border-left: 5px solid #fff;
+              width: 1px
+          }
+      }
+
+
+      @media(max-width:991px) {
+
+          html,
+          body {
+              font-size: 15px
+          }
+
+          .nav-trigger {
+              display: block;
+              position: fixed;
+              top: 10px;
+              right: 10px;
+              z-index: 901;
+              background: #77716e;
+              background: rgba(0, 138, 235, .5)
+          }
+
+          .nav {
+              z-index: 900;
+              position: fixed;
+              top: 0;
+              right: -60%;
+              overflow-y: auto;
+              width: 60%;
+              height: 100%;
+              background: #008aeb
+          }
+
+          .nav.nav-hidden,
+          .nav.nav-visible {
+              -moz-transition-duration: .5s;
+              -webkit-transition-duration: .5s;
+              -o-transition-duration: .5s;
+              transition-duration: .5s
+          }
+
+          .nav.nav-visible {
+              right: 0%;
+              -moz-transition-timing-function: ease-in;
+              -webkit-transition-timing-function: ease-in;
+              -o-transition-timing-function: ease-in;
+              transition-timing-function: ease-in
+          }
+
+          .nav.nav-hidden {
+              right: -60%;
+              -moz-transition-timing-function: cubic-bezier(0, 1, .5, 1);
+              -webkit-transition-timing-function: cubic-bezier(0, 1, .5, 1);
+              -o-transition-timing-function: cubic-bezier(0, 1, .5, 1);
+              transition-timing-function: cubic-bezier(0, 1, .5, 1)
+          }
+
+          .nav ul {
+              position: static !important;
+              margin: 5px 0 5px 20px;
+              min-width: 0 !important;
+              background: none !important;
+              text-align: left
+          }
+
+          .nav ul.static {
+              margin-top: 70px
+          }
+
+          .nav li {
+              display: block !important;
+              background: none !important;
+              text-align: left
+          }
+
+          .nav a {
+              display: inline-block;
+              width: auto
+          }
+
+          .nav li.static>a {
+              color: #fff
+          }
+
+          .nav li.static:hover>a,
+          .nav li.static:focus>a,
+          .nav li.static:active>a,
+          .nav li.static a.selected {
+              color: #252525;
+              text-decoration: none
+          }
+
+          .nav-section ul.static>.has-dynamic:before,
+          .nav-section ul.dynamic>.has-dynamic:before {
+              content: "";
+              position: absolute;
+              top: 12px;
+              right: 5px;
+              display: block;
+              border: 5px solid transparent;
+              border-top: 5px solid #fff;
+              width: 1px
+          }
+
+          .nav li.dynamic.has-dynamic {
+              padding: 0
+          }
+
+          .header-location-info,
+          .btn-appointments {
+              display: inline-block;
+              width: 49%;
+              vertical-align: bottom;
+              text-align: left
+          }
+      }
+
+      @media(max-width:450px) {
+
+          html,
+          body {
+              font-size: 13px
+          }
+      }
+
+      @media(max-width:350px) {
+          .header-logo-container {
+              margin: 65px auto 0
+          }
+      }
+
+      @font-face {
+          font-family: 'titillium';
+          src: url('/Themes/Automotive/Assets/fonts/titilliumweb/titilliumweb-light-webfont.eot');
+          src: url('/Themes/Automotive/Assets/fonts/titilliumweb/titilliumweb-light-webfont.eot?#iefix') format('embedded-opentype'), url('/Themes/Automotive/Assets/fonts/titilliumweb/titilliumweb-light-webfont.woff') format('woff'), url('/Themes/Automotive/Assets/fonts/titilliumweb/titilliumweb-light-webfont.ttf') format('truetype'), url('/Themes/Automotive/Assets/fonts/titilliumweb/titilliumweb-light-webfont.svg#titillium_weblight') format('svg');
+          font-weight: 300;
+          font-style: normal
+      }
+
+      @font-face {
+          font-family: 'titillium';
+          src: url('/Themes/Automotive/Assets/fonts/titilliumweb/titilliumweb-black-webfont.eot');
+          src: url('/Themes/Automotive/Assets/fonts/titilliumweb/titilliumweb-black-webfont.eot?#iefix') format('embedded-opentype'), url('/Themes/Automotive/Assets/fonts/titilliumweb/titilliumweb-black-webfont.woff') format('woff'), url('/Themes/Automotive/Assets/fonts/titilliumweb/titilliumweb-black-webfont.ttf') format('truetype'), url('/Themes/Automotive/Assets/fonts/titilliumweb/titilliumweb-black-webfont.svg#titilliumblack') format('svg');
+          font-weight: 900;
+          font-style: normal
+      }
+
+      @font-face {
+          font-family: 'titillium';
+          src: url('/Themes/Automotive/Assets/fonts/titilliumweb/titilliumweb-bold-webfont.eot');
+          src: url('/Themes/Automotive/Assets/fonts/titilliumweb/titilliumweb-bold-webfont.eot?#iefix') format('embedded-opentype'), url('/Themes/Automotive/Assets/fonts/titilliumweb/titilliumweb-bold-webfont.woff') format('woff'), url('/Themes/Automotive/Assets/fonts/titilliumweb/titilliumweb-bold-webfont.ttf') format('truetype'), url('/Themes/Automotive/Assets/fonts/titilliumweb/titilliumweb-bold-webfont.svg#titilliumbold') format('svg');
+          font-weight: 700;
+          font-style: normal
+      }
+
+      @font-face {
+          font-family: 'titillium';
+          src: url('/Themes/Automotive/Assets/fonts/titilliumweb/titilliumweb-regular-webfont.eot');
+          src: url('/Themes/Automotive/Assets/fonts/titilliumweb/titilliumweb-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/Themes/Automotive/Assets/fonts/titilliumweb/titilliumweb-regular-webfont.woff') format('woff'), url('/Themes/Automotive/Assets/fonts/titilliumweb/titilliumweb-regular-webfont.ttf') format('truetype'), url('/Themes/Automotive/Assets/fonts/titilliumweb/titilliumweb-regular-webfont.svg#titilliumregular') format('svg');
+          font-weight: 400;
+          font-style: normal
+      }
+
+      @font-face {
+          font-family: 'cms';
+          src: url('/Themes/Automotive/Assets/fonts/cms/cms.eot');
+          src: url('/Themes/Automotive/Assets/fonts/cms/cms.eot?#iefix') format('embedded-opentype'), url('/Themes/Automotive/Assets/fonts/cms/cms.woff') format('woff'), url('/Themes/Automotive/Assets/fonts/cms/cms.ttf') format('truetype'), url('/Themes/Automotive/Assets/fonts/cms/cms.svg') format('svg');
+          font-style: normal;
+          font-weight: normal
+      }
+
+
+  }
+
+
+
+  /* navbar css start */
+  .navbar.nav-scroll {
+      width: 100%;
+      background-color: #fff;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      z-index: 999;
+      position: relative;
+      transition: all .3s ease-in-out;
+  }
+
+  .navbar.navbar-wrapper {
+      // position: fixed;
+      // top: 0;
+      // left: 0;
+      text-align: center;
+      padding: 0rem !important;
+      width: 100%;
+      transition: all .3s ease-in-out;
+      z-index: 999;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      // overflow: hidden;
+      // height: 7.2rem;
+      justify-content: center;
+
+      .row {
+          width: 100%;
+          margin: 0px;
+          padding: 0px;
+          justify-content: space-between;
+      }
+
+      .col {
+          padding: 0px;
+      }
+
+      .review-section {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          height: 100%;
+
+          .reviewtitle {
+              font-size: 18px;
+              line-height: 25px;
+              color: #252525;
+              font-weight: 300;
+              font-family: 'Titillium Web', sans-serif;
+          }
+
+          .rating {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 5px;
+
+              .stars {
+                  i {
+                      color: #F5BD00;
+                      font-size: 13px;
+                  }
+              }
+
+              a {
+                  font-size: 14px;
+                  line-height: 20px;
+                  color: #252525;
+                  font-weight: 400;
+                  font-family: 'Titillium Web', sans-serif;
+              }
+          }
+      }
+
+
+
+      .navbar-toggler:focus,
+      .navbar-toggler:hover {
+          box-shadow: none;
+          outline: none;
+      }
+
+      .navbar-toggler {
+          font-size: 25px;
+          color: #fff;
+          position: fixed;
+          top: 10px;
+          right: 10px;
+          background: rgba(0, 138, 235, 0.5);
+          border-radius: 0px;
+          padding: 10px 15px;
+          z-index: 100;
+          border: none;
+      }
+
+      .navbar-brand {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2.7rem;
+          font-family: 'Work Sans';
+          font-style: italic;
+          font-weight: 700;
+          line-height: 3.5rem;
+          color: red;
+          height: 100%;
+
+
+          .logo {
+              margin-right: 1.2rem;
+              max-width: 200px;
+              max-height: 100px;
+
+          }
+      }
+
+      .collapse,
+      .navbar-collapse {
+          height: 100%;
+      }
+
+      .navbar-nav {
+
+          .nav-item {
+              .nav-link {
+                  font-size: 17px;
+                  text-align: center;
+                  margin-right: 0;
+                  transition: all .3s ease-out;
+                  padding: 8px 20px;
+                  font-style: normal;
+                  font-weight: 300;
+                  line-height: 20px;
+                  font-family: 'Titillium Web', sans-serif;
+                  color: #252525;
+
+                  &.active,
+                  &:hover {
+                      color: #008aeb;
+                      transition: all .3s ease-out;
+                  }
+
+              }
+
+              &:first-child a {
+                  padding-left: 0px;
+              }
+
+          }
+      }
+
+      .hederbuttons-section {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+
+          .phonenumber {
+              font-size: 24px;
+              line-height: 34px;
+              font-weight: 900;
+              color: #eaeaea;
+              font-family: 'Titillium Web', sans-serif;
+              background: #0d3967;
+              padding: 10px 0 15px;
+              text-align: center;
+              display: block;
+              width: 100%;
+
+          }
+
+          .appointment {
+              font-size: 17px;
+              line-height: 27px;
+              font-weight: 700;
+              color: #fff;
+              font-family: 'Titillium Web', sans-serif;
+              background: #008aeb;
+              padding: 10px 0 15px;
+              text-align: center;
+              display: block;
+              width: 100%;
+
+          }
+      }
+  }
+
+  /* navbar css end */
+
+
+
+  .hero-section {
+      width: 100%;
+      height: 410px;
+      background-image: url('../images/slideshow-1.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+
+
+  @media only screen and (max-width: 992px) {
+      .navbar.navbar-wrapper .hederbuttons-section {
+          flex-direction: row;
+      }
+      
+      .navbar.navbar-wrapper .hederbuttons-section .appointment {
+        font-size: 24px;
+        line-height: 34px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+      .navbar-collapse {
+          position: fixed;
+          top: 0px;
+          background: #008AEB;
+          width: 50%;
+          right: 0px;
+          z-index: 99;
+      }
+
+      .navbar-nav {
+          margin-top: 70px;
+      }
+
+      .navbar.navbar-wrapper .navbar-nav .nav-item .nav-link {
+          color: #fff;
+          text-align: left;
+          padding: 8px 20px !important;
+          margin: 5px 0px;
+
+          &.active {
+              color: #000;
+          }
+      }
+
+      .top-header-address {
+          padding-top: 70px;
+      }
+
+  }
+
+  @media only screen and (max-width: 576px) {
+      .navbar-collapse {
+          width: 80%;
+      }
+      .navbar.navbar-wrapper .hederbuttons-section {
+        flex-direction: column;
+    }
+    .container-fluid
+    {
+        padding: 0px;
+    }
+  }
