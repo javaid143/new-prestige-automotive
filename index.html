@@ -128,14 +128,21 @@
       <div class="row">
         <div class="content">
           <h3 class="service_title">AC Service - Take $25 Off</h3>
-        <h3 class="subtitle">Received $15 off an AC service. This Service includes: <br>
-          Pressure check <br>
-          Temperature check <br>
-          Inspection of drive belts <br>
-          Clean, dry, & add freon for efficient use</h3>
+          <h3 class="subtitle">Received $15 off an AC service. This Service includes: <br>
+            Pressure check <br>
+            Temperature check <br>
+            Inspection of drive belts <br>
+            Clean, dry, & add freon for efficient use</h3>
           <br>
           <br>
-          <p class="substracttxt"> <b>Not valid</b> with other offer or special. Coupon must be presented in advance. See shop for details. ... [Hide]</p>
+          <p class="substracttxt">
+            <b>Not valid</b>
+            <span id="text">
+              with other offer or special. Coupon must be presented in advance. See shop for details
+            </span>
+            . ...
+            <button id="toggle">[More]</button>
+          </p>
           <br>
           <a class="redeembtn" href="#">REDEEM NOW</a>
         </div>
@@ -148,14 +155,14 @@
 
   <!-- service quality cards section start  -->
   <div class="service-quality-card">
-    <div class="row row-cols-1 row-cols-md-3 g-0">
+    <div class="row row-cols-1 row-cols-lg-3 g-0">
       <div class="col">
         <div class="card h-100">
           <div class="card-body">
             <div class="cardicon">
-            <img src="./assets/images/location-icon.png" alt="sds" class="img-fluid">
+              <img src="./assets/images/location-icon.png" alt="sds" class="img-fluid">
             </div>
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Lorem ipsum dolor sit.</h5>
           </div>
         </div>
       </div>
@@ -163,9 +170,9 @@
         <div class="card h-100">
           <div class="card-body">
             <div class="cardicon">
-            <img src="./assets/images/location-icon.png" alt="sds" class="img-fluid">
+              <img src="./assets/images/loaner-car-icon.png" alt="sds" class="img-fluid">
             </div>
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Lorem ipsum dolor sit.</h5>
           </div>
         </div>
       </div>
@@ -173,19 +180,89 @@
         <div class="card h-100">
           <div class="card-body">
             <div class="cardicon">
-            <img src="./assets/images/location-icon.png" alt="sds" class="img-fluid">
+              <img src="./assets/images/fleet-icon.png" alt="sds" class="img-fluid">
             </div>
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Lorem ipsum dolor sit.</h5>
           </div>
         </div>
       </div>
+
     </div>
   </div>
   <!-- service quality cards section end  -->
 
 
+  <!-- services card section start  -->
+  <div class="services-cards">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="card-content">
+          <h2 class="section-title">Dana Brothers Automotive & Diesel Service</h2>
+          <p class="section-details">Here at Dana Brothers our technicians service all makes and models of cars and
+            trucks. We specialize in Cummins, Duramax and Power Stroke diesels, however we enjoy working on all
+            vehicles. We do everything from routine maintenance to engine and transmission swaps, fuel system repair and
+            much more.We use the best parts in the industry to fix your car or truck right the first time so you can
+            stay on the road and not in the shop.</p>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card ">
+         <div class="cardimg">
+          <img src="./assets/images/placeholder2.jpg" class="card-img-top" alt="jj">
+         </div>
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum dolor</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nulla natus pariatur harum fugiat atque. Tenetur quibusdam temporibus officiis nisi enim impedit. Vero hic facere sit tenetur ducimus est voluptatem ex similique distinctio, voluptates atque vitae voluptas eos rem ullam. voluptates atque vitae voluptas eos rem ullam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card ">
+         <div class="cardimg">
+          <img src="./assets/images/placeholder2.jpg" class="card-img-top" alt="jj">
+         </div>
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum dolor</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nulla natus pariatur harum fugiat atque. Tenetur quibusdam temporibus officiis nisi enim impedit. Vero hic facere sit tenetur ducimus est voluptatem ex similique distinctio, voluptates atque vitae voluptas eos rem ullam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card ">
+         <div class="cardimg">
+          <img src="./assets/images/placeholder2.jpg" class="card-img-top" alt="jj">
+         </div>
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum dolor</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nulla natus pariatur harum fugiat atque. Tenetur quibusdam temporibus officiis nisi enim impedit. Vero hic facere sit tenetur ducimus est voluptatem ex similique distinctio, voluptates atque vitae voluptas eos rem ullam.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- services card section end  -->
+
+
 
   <script src="./assets/bootstrap/js/bootstrap-js-bundle-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#toggle").click(function () {
+        var elem = $("#toggle").text();
+        if (elem == "[More]") {
+          $("#toggle").text("[Hide]");
+          $("#text").fadeIn();
+        } else {
+          $("#toggle").text("[More]");
+          $("#text").fadeOut();
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

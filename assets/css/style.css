@@ -856,21 +856,129 @@ th {
 .service_section .content .redeembtn:hover {
   background: #0d3967;
 }
+.service_section #text {
+  display: none;
+}
+.service_section #toggle {
+  border: none;
+  background: transparent;
+  transition: all 0.5s ease-in-out;
+}
+.service_section #toggle:hover {
+  color: #008AEB;
+}
 
 .service-quality-card {
   margin-bottom: 40px;
   background: #0d3967;
   text-align: center;
 }
+.service-quality-card .row .col {
+  margin: 11px 0px;
+}
 .service-quality-card .card {
   background: transparent;
   border: none;
+  border-radius: 0px;
+  padding: 0px;
 }
 .service-quality-card .card .card-body {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  gap: 40px;
+  padding: 0px;
+}
+.service-quality-card .card .card-body .card-title {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Titillium Web", sans-serif;
+}
+.service-quality-card .row .col:nth-child(2) .card {
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
+}
+
+.services-cards {
+  margin: 100px 0px;
+}
+.services-cards .card-content {
+  margin: 24px 0 48px;
+}
+.services-cards .card-content .section-title {
+  font-size: 48px;
+  line-height: 48px;
+  color: #2a2a2a;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+}
+.services-cards .card-content .section-details {
+  font-size: 18px;
+  line-height: 32px;
+  color: #252829;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+}
+.services-cards .row .col .card {
+  margin: 0px 40px;
+  border: none;
+  border-radius: 0px;
+  background: #0D3967;
+  position: relative;
+  overflow: hidden;
+}
+.services-cards .row .col .card::before {
+  z-index: 5;
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0;
+  left: 0;
+  border-style: solid;
+  border-width: 0px 0px 25px 400px;
+  border-color: transparent white transparent;
+}
+.services-cards .row .col .card .cardimg {
+  position: relative;
+}
+.services-cards .row .col .card .cardimg::after {
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(180deg, rgba(13, 57, 103, 0), #0D3967);
+}
+.services-cards .row .col .card img {
+  -o-border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.2), #000);
+     border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.2), #000);
+}
+.services-cards .row .col .card .card-body {
+  padding: 0px 25px 25px 25px;
+}
+.services-cards .row .col .card .card-body .card-title {
+  font-size: 26px;
+  line-height: 26px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Titillium Web", sans-serif;
+  border-bottom: 1px solid #3d6185;
+  padding-bottom: 15px;
+  margin-top: 22px;
+  margin-bottom: 11px;
+}
+.services-cards .row .col .card .card-body .card-text {
+  font-size: 18px;
+  line-height: 29px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Titillium Web", sans-serif;
 }
 
 @media only screen and (max-width: 992px) {
@@ -880,6 +988,9 @@ th {
   .navbar.navbar-wrapper .hederbuttons-section .appointment {
     font-size: 24px;
     line-height: 34px;
+  }
+  .service-quality-card .row .col:nth-child(2) .card {
+    border: 0px;
   }
 }
 @media only screen and (max-width: 768px) {
