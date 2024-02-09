@@ -20,15 +20,12 @@
       overflow-x: hidden;
       margin: 0px;
       padding: 0px;
-      font-family: 'Montserrat', sans-serif;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Titillium Web', sans-serif;
       font-size: 16px;
 
   }
 
-  body {
-      font-family: 'Poppins', sans-serif;
-  }
+
 
   img {
       width: 100% !important;
@@ -790,7 +787,7 @@
           justify-content: center;
           align-items: center;
           font-size: 2.7rem;
-          font-family: 'Work Sans';
+          font-family: 'Titillium Web', sans-serif;
           font-style: italic;
           font-weight: 700;
           line-height: 3.5rem;
@@ -826,6 +823,7 @@
                   font-weight: 300;
                   line-height: 20px;
                   font-family: 'Titillium Web', sans-serif;
+
                   color: #252525;
 
                   &.active,
@@ -1185,6 +1183,371 @@
       }
   }
 
+
+  .logos-section {
+      margin: 100px 0px;
+
+      .row {
+          display: flex;
+          justify-content: center;
+
+      }
+
+      .logo-grid {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 700px;
+          gap: 50px;
+
+      }
+  }
+
+
+
+  .testimonial_section {
+      background: url('../images/testimonials--bg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      position: relative;
+      padding: 90px 0px;
+      margin: 100px 0px;
+
+      .qoutes {
+          position: absolute;
+          top: -30px;
+          right: 0;
+          left: 0;
+          margin: 0 auto;
+          width: 140px;
+          height: 105px;
+      }
+
+
+      .testimonial_section_inner {
+          padding: 0rem;
+          padding: 0rem;
+          margin: 0rem;
+          //   overflow: hidden;
+
+          .section_header {
+              .subheading {
+                  font-size: 48px;
+                  line-height: 48px;
+                  color: #fff;
+                  font-weight: 600;
+                  font-family: 'Titillium Web', sans-serif;
+                  text-align: center;
+              }
+
+              .heading {
+                  font-size: 68px;
+                  line-height: 68px;
+                  color: #fff;
+                  font-weight: 800;
+                  font-family: 'Titillium Web', sans-serif;
+                  text-align: center;
+                  text-transform: uppercase;
+              }
+          }
+
+          .row {
+              width: 100%;
+              height: 100%;
+              padding: 0rem;
+              margin: 0rem;
+              position: relative;
+
+
+              .swiper {
+                  overflow-y: visible;
+                  height: auto;
+              }
+
+              .myswiper {
+
+                  width: 100%;
+                  height: 100%;
+                  position: relative;
+                  padding: 0%;
+                  margin: 0%;
+                  margin-top: 20px;
+
+                  .swiper-wrapper {
+                      overflow: hidden;
+                  }
+
+                  .swiper-slide {
+                      width: 100%;
+                      overflow: visible;
+
+                      p.testimonial_desc {
+                          font-family: 'Titillium Web', sans-serif;
+                          font-style: normal;
+                          font-weight: 700;
+                          font-size: 19px;
+                          line-height: 32px;
+                          text-align: center;
+                          color: #FFFFFF;
+                          margin-bottom: 10px;
+                      }
+
+                      .reviews-details {
+
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          gap: 20px;
+
+                          .stars {
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              gap: 5px;
+
+                              i {
+                                  color: #F5BD00;
+                                  font-size: 12px;
+                              }
+                          }
+
+                          .name {
+                              font-family: 'Titillium Web', sans-serif;
+                              font-style: normal;
+                              font-weight: 700;
+                              font-size: 18px;
+                              line-height: 32px;
+                              text-align: center;
+                              color: #FFFFFF;
+                          }
+                      }
+                  }
+
+                  .button-area {
+                      display: flex;
+                      justify-content: space-around;
+                      background-color: #000;
+                      align-items: center;
+                      position: absolute;
+                      top: 100%;
+                      left: 0%;
+                      width: 100%;
+                      z-index: 55;
+
+                      .prev {
+                          border-right: 1px solid #fff;
+                      }
+
+                      .prev,
+                      .next {
+                          padding: 1rem;
+                          cursor: pointer;
+                          color: #fff;
+                          font-size: 1.7rem;
+                          width: 50%;
+                          display: flex;
+                          justify-content: center;
+                          transition: all .4s ease-out;
+
+
+                          img {
+                              max-width: 4rem;
+                              margin: 0rem 1rem;
+                          }
+
+                          &:hover {
+                              background: red;
+
+                          }
+                      }
+                  }
+
+              }
+          }
+
+          .owl-carousel {
+              .item {
+                  margin: 5px;
+
+                  img {
+                      display: block;
+                      width: 100%;
+                      height: auto;
+                  }
+
+                  p.testimonial_desc {
+                      font-family: 'Titillium Web', sans-serif;
+                      font-style: normal;
+                      font-weight: 700;
+                      font-size: 19px;
+                      line-height: 32px;
+                      text-align: center;
+                      color: #FFFFFF;
+                      margin-bottom: 10px;
+                  }
+
+                  .reviews-details {
+
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      gap: 20px;
+
+                      .stars {
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          gap: 5px;
+
+                          i {
+                              color: #F5BD00;
+                              font-size: 12px;
+                          }
+                      }
+
+                      .name {
+                          font-family: 'Titillium Web', sans-serif;
+                          font-style: normal;
+                          font-weight: 700;
+                          font-size: 18px;
+                          line-height: 32px;
+                          text-align: center;
+                          color: #FFFFFF;
+                      }
+                  }
+
+
+              }
+
+              .owl-dots .owl-dot {
+                  display: inline-block;
+                  margin: 0 5px;
+              }
+
+              .owl-nav {
+                  position: absolute;
+                  bottom: -180px;
+                  transform: translate(-50%, -50%);
+                  left: 50%;
+                  margin: 0rem;
+                  display: flex;
+                  width: 100%;
+                  justify-content: center;
+              }
+
+              .owl-nav [class*='owl-'] {
+                  margin: 5px;
+                  position: relative;
+                  left: 0rem;
+                  font-size: 2rem;
+                  /* Increase icon size */
+                  color: #fff;
+                  border-radius: 50%;
+                  width: 3rem;
+                  height: 3rem;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background: transparent;
+                  /* Change icon color */
+              }
+          }
+
+          .viewallreviews {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-top: 25px;
+              margin-bottom: 25px;
+
+              a {
+                  font-size: 18px;
+                  line-height: 18px;
+                  color: #fff;
+                  font-weight: 700;
+                  font-family: 'Titillium Web', sans-serif;
+                  display: inline-block;
+                  border: 3px solid #fff;
+                  border-radius: 3px;
+                  padding: 18px 55px;
+                  text-transform: uppercase;
+              }
+          }
+      }
+  }
+
+
+
+  .fleet_services_section {
+      margin: 100px 0px;
+
+      .fleetheading {
+          font-size: 48px;
+          line-height: 48px;
+          color: #2a2a2a;
+          font-weight: 700;
+          font-family: 'Titillium Web', sans-serif;
+          text-align: center;
+          margin: 40px 0px;
+      }
+
+      .fleetdesc {
+          font-size: 19px;
+          line-height: 30px;
+          color: #252829;
+          font-weight: 700;
+          font-family: 'Titillium Web', sans-serif;
+          text-align: center;
+          margin-bottom: 40px;
+      }
+
+      .fleetbtn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          a {
+              font-size: 18px;
+              line-height: 29px;
+              color: #fff;
+              font-weight: 700;
+              font-family: 'Titillium Web', sans-serif;
+              text-align: center;
+              border-radius: 3px;
+              text-transform: uppercase;
+              background: #0d3967;
+              padding: 15px 60px;
+              display: inline-block;
+          }
+      }
+  }
+
+  @media only screen and (min-width: 768px) {
+      .testimonial_section .testimonial_section_inner .section_header {
+          position: relative;
+
+          &::before {
+              content: "Client Reviews";
+              position: absolute;
+              bottom: 30px;
+              right: 0;
+              left: 0;
+              overflow: hidden;
+              max-height: 100px;
+              color: rgba(255, 255, 255, .1);
+              text-transform: uppercase;
+              font-weight: 900;
+              font-size: 120px;
+              line-height: 100px;
+              font-family: 'Titillium Web', sans-serif;
+              text-align: center;
+
+          }
+      }
+  }
+
   @media only screen and (max-width: 992px) {
       .navbar.navbar-wrapper .hederbuttons-section {
           flex-direction: row;
@@ -1230,6 +1593,10 @@
           padding-top: 70px;
       }
 
+      .testimonial_section .testimonial_section_inner .section_header .heading {
+          font-size: 60px;
+      }
+
   }
 
   @media only screen and (max-width: 576px) {
@@ -1243,5 +1610,10 @@
 
       .container-fluid {
           padding: 0px;
+      }
+
+      .testimonial_section .testimonial_section_inner .section_header .heading {
+          font-size: 46px;
+          line-height: 60px;
       }
   }
