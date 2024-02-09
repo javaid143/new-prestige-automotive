@@ -1260,12 +1260,122 @@ th {
   display: inline-block;
 }
 
+.appointment_section {
+  background: url("../images/appointments-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  position: relative;
+  padding: 90px 0px;
+  margin: 100px 0px;
+}
+.appointment_section::before {
+  z-index: 5;
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0;
+  left: 0;
+  border-style: solid;
+  border-width: 0px 0px 40px 1900px;
+  border-color: transparent white transparent;
+}
+.appointment_section .section_header .subheading {
+  font-size: 48px;
+  line-height: 48px;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+}
+.appointment_section .section_header .heading {
+  font-size: 68px;
+  line-height: 68px;
+  color: #fff;
+  font-weight: 800;
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+.appointment_section form input,
+.appointment_section form select {
+  font-size: 17px;
+  line-height: 17px;
+  color: #fff;
+  font-weight: 300;
+  font-family: "Titillium Web", sans-serif;
+  background: transparent;
+  width: 100%;
+  border: none;
+  box-shadow: unset;
+  outline: transparent;
+  border-bottom: 4px solid #777476;
+  margin: 0 auto 15px;
+  padding: 0.8em 1.3em;
+}
+.appointment_section form input:focus,
+.appointment_section form select:focus {
+  border-bottom: 4px solid #fff;
+}
+.appointment_section form input::-moz-placeholder, .appointment_section form select::-moz-placeholder {
+  color: #fff;
+}
+.appointment_section form input::placeholder,
+.appointment_section form select::placeholder {
+  color: #fff;
+}
+.appointment_section form input[type=date] {
+  margin: 5px auto 15px;
+}
+.appointment_section form select {
+  margin: -2px auto 15px;
+}
+.appointment_section form .submitbtn {
+  font-size: 18px;
+  line-height: 29px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Titillium Web", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #008aeb;
+  display: inline-block;
+  border-radius: 3px;
+  margin: 0 auto 1em;
+  margin-top: 40px;
+  padding: 15px 60px;
+  transition: all 0.5s ease-in-out;
+}
+.appointment_section form .submitbtn:hover {
+  background: #0D3967;
+}
+
 @media only screen and (min-width: 768px) {
   .testimonial_section .testimonial_section_inner .section_header {
     position: relative;
   }
   .testimonial_section .testimonial_section_inner .section_header::before {
     content: "Client Reviews";
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    max-height: 100px;
+    color: rgba(255, 255, 255, 0.1);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 120px;
+    line-height: 100px;
+    font-family: "Titillium Web", sans-serif;
+    text-align: center;
+  }
+  .appointment_section .section_header {
+    position: relative;
+  }
+  .appointment_section .section_header::before {
+    content: "appointment";
     position: absolute;
     bottom: 30px;
     right: 0;
