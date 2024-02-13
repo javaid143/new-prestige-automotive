@@ -757,6 +757,12 @@
                   color: #252525;
                   font-weight: 400;
                   font-family: 'Titillium Web', sans-serif;
+                  text-decoration: underline;
+                  transition: all .5s ease-in-out;
+                  &:hover 
+                  {
+                    text-decoration: none;
+                  }
               }
           }
       }
@@ -793,12 +799,18 @@
           line-height: 3.5rem;
           color: red;
           height: 100%;
+          margin: 0px;
 
 
           .logo {
               margin-right: 1.2rem;
-              max-width: 200px;
-              max-height: 100px;
+
+              img 
+              {
+                max-width: 200px;
+                max-height: 100px;
+              }
+            
 
           }
       }
@@ -945,32 +957,13 @@
 
   .service_section {
       margin-bottom: 83px;
+      margin-top: 100px;
 
       .content {
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          position: relative;
-
-          &::before {
-              z-index: -1;
-              content: "Special Offers";
-              position: absolute;
-              top: 18px;
-              right: 0;
-              left: 0;
-              overflow: hidden;
-              max-height: 150px;
-              color: #eaeaea;
-              font-size: 128px;
-              line-height: 150px;
-              font-weight: 900;
-              text-transform: uppercase;
-              text-align: center;
-              font-family: 'Titillium Web', sans-serif;
-
-          }
 
           .service_title {
               margin-bottom: 7px;
@@ -1620,9 +1613,9 @@
               margin-top: 40px;
               padding: 15px 60px;
               transition: all .5s ease-in-out;
-              &:hover 
-              {
-                background: #0D3967;
+
+              &:hover {
+                  background: #0D3967;
               }
           }
 
@@ -1630,7 +1623,222 @@
   }
 
 
+  .footersection {
+      .card {
+          border: none;
+          background: transparent;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
+          .logo
+          {
+            max-width: 250px;
+          }
+          .card-header {
+              background: transparent;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              border: none;
+              width: 100%;
+
+              a.card-title {
+
+                  font-size: 34px;
+                  line-height: 48px;
+                  font-weight: 900;
+                  font-family: 'Titillium Web', sans-serif;
+                  transition: all .5s ease-in-out;
+
+                  &:hover {
+                      color: #008aeb;
+                  }
+              }
+
+          }
+
+          .card-body {
+              a.card-text {
+                  font-size: 19px;
+                  line-height: 27px;
+                  font-weight: 700;
+                  font-family: 'Titillium Web', sans-serif;
+                  transition: all .5s ease-in-out;
+                  color: #008aeb;
+
+                  &:hover {
+                      color: #252829;
+                  }
+              }
+
+              p.card-text {
+                  font-size: 19px;
+                  line-height: 27px;
+                  font-weight: 700;
+                  font-family: 'Titillium Web', sans-serif;
+              }
+          }
+
+          .getdirectionbtn {
+              font-size: 18px;
+              line-height: 29px;
+              font-weight: 700;
+              font-family: 'Titillium Web', sans-serif;
+              padding: 15px 50px;
+              display: inline-block;
+              margin: 0 auto 1em;
+              border: 0;
+              background: #008aeb;
+              text-align: center;
+              text-transform: uppercase;
+              transition: all .5s ease 0s;
+              border-radius: 3px;
+              color: #fff;
+
+              &:hover 
+              {
+                background-color: #0D3967;
+              }
+          }
+      }
+
+      .card3 {
+          .card-title {
+              font-size: 19px;
+              line-height: 27px;
+              font-weight: 700;
+              font-family: 'Titillium Web', sans-serif;
+
+
+          }
+
+          .social-icons {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              a {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  height: 40px;
+                  border-radius: 50%;
+                  transition: all .5s ease-in-out;
+                  overflow: hidden;
+
+                  &:hover {
+                      background: #000;
+                  }
+
+                  i {
+                      font-size: 40px;
+                      color: #5C79CA;
+                      border: none;
+                      border-radius: 50%;
+                      overflow: hidden;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+
+                      &.fa-facebook {
+                          overflow: hidden;
+                          background: #000;
+                          border: none;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          background: transparent;
+                      }
+
+                      &.fa-google {
+                          font-size: 25px;
+                          color: #fff;
+
+                          &::before {
+                              padding: 10px;
+                              background: #E24B35;
+                              border-radius: 50%;
+                          }
+                          &:hover 
+                          {
+                            color: #000;
+                          }
+                      }
+
+                      &.fa-yelp {
+                          color: #fff;
+                          width: 43px;
+                          height: 43px;
+                          margin-left: auto;
+                          margin-right: auto;
+                          overflow: hidden;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          border-radius: 50%;
+                          padding: 10px;
+                          font-size: 25px;
+                          background: #C73021;
+                          transition: all .3s ease-in-out;
+
+
+                          &::before {
+                              background: #C73021;
+                              padding: 10px;
+                              border-radius: 50%;
+                          }
+                          &:hover 
+                          {
+                            color: #000;
+                          }
+                      }
+                  }
+
+              }
+          }
+      }
+
+  }
+
+  .bottomfooter
+  {
+    .bottomfootergrid
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .card 
+        {
+            border: none;
+            background: transparent;
+          
+            .card-text
+            {
+                font-size: 15px;
+                line-height: 21px;
+                font-weight: 900;
+                font-family: 'Titillium Web', sans-serif;
+                color: #8b8b8b;
+            }
+            .card-body
+            {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                gap: 20px;
+            }
+            a 
+            {
+                font-size: 11px;
+                line-height: 15px;
+                font-weight: 400;
+                font-family: 'Titillium Web', sans-serif;
+                color: #8b8b8b;
+            }
+        }
+    }
+  }
 
 
   @media only screen and (min-width: 768px) {
@@ -1654,6 +1862,29 @@
               text-align: center;
 
           }
+      }
+
+      .service_section .content
+      {
+        position: relative;
+        &::before {
+            z-index: -1;
+            content: "Special Offers";
+            position: absolute;
+            top: 18px;
+            right: 0;
+            left: 0;
+            overflow: hidden;
+            max-height: 150px;
+            color: #eaeaea;
+            font-size: 128px;
+            line-height: 150px;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Titillium Web', sans-serif;
+
+        }
       }
 
       .appointment_section .section_header {
@@ -1691,6 +1922,10 @@
       .service-quality-card .row .col:nth-child(2) .card {
           border: 0px;
       }
+      .footersection .card
+      {
+        align-items: start;
+      }
   }
 
   @media only screen and (max-width: 768px) {
@@ -1726,6 +1961,34 @@
       .testimonial_section .testimonial_section_inner .section_header .heading {
           font-size: 60px;
       }
+      .appointment_section .section_header .heading
+      {
+        font-size: 60px;
+      }
+      .hero-section
+      {
+        display: none;
+      }
+      .service_section
+      {
+        margin-top: 0px;
+      }
+
+  }
+
+  @media only screen and (max-width: 650px) {
+    .bottomfooter .bottomfootergrid
+    {
+        flex-direction: column;
+    }
+    .appointment_section .section_header .heading
+    {
+      font-size: 50px;
+    }
+    .appointment_section .section_header .subheading
+    {
+        font-size: 35px;
+    }
 
   }
 
@@ -1738,12 +2001,62 @@
           flex-direction: column;
       }
 
-      .container-fluid {
-          padding: 0px;
-      }
+    
 
       .testimonial_section .testimonial_section_inner .section_header .heading {
           font-size: 46px;
           line-height: 60px;
       }
+      .footersection .card
+      {
+        align-items: center;
+        text-align: center;
+      }
+      .footersection .card .card-header
+      {
+        justify-content: center;
+      }
+      .bottomfooter .bottomfootergrid .card .card-body
+      {
+        padding: 5px;
+      }
+      .bottomfooter .bottomfootergrid .card .card-text
+      {
+        text-align: center;
+      }
+      .hero-section .content .herotxt
+      {
+        font-size: 40px;
+      }
+      .hero-section .content .hero-title
+      {
+        font-size: 46px;
+
+      }
   }
+  @media only screen and (max-width: 450px) {
+    .appointment_section .section_header .heading
+    {
+        font-size: 40px;
+    }  
+}
+  @media only screen and (max-width: 400px) {
+    .appointment_section .section_header .heading
+    {
+        font-size: 35px;
+        line-height: 40px;
+    }  
+    .appointment_section .section_header .subheading
+    {
+        font-size: 25px;
+    }
+    .hero-section .content .herotxt
+    {
+        font-size: 30px;
+    }
+    .hero-section .content .hero-title
+    {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}

@@ -628,6 +628,11 @@ th {
   color: #252525;
   font-weight: 400;
   font-family: "Titillium Web", sans-serif;
+  text-decoration: underline;
+  transition: all 0.5s ease-in-out;
+}
+.navbar.navbar-wrapper .review-section .rating a:hover {
+  text-decoration: none;
 }
 .navbar.navbar-wrapper .navbar-toggler:focus,
 .navbar.navbar-wrapper .navbar-toggler:hover {
@@ -657,9 +662,12 @@ th {
   line-height: 3.5rem;
   color: red;
   height: 100%;
+  margin: 0px;
 }
 .navbar.navbar-wrapper .navbar-brand .logo {
   margin-right: 1.2rem;
+}
+.navbar.navbar-wrapper .navbar-brand .logo img {
   max-width: 200px;
   max-height: 100px;
 }
@@ -780,30 +788,13 @@ th {
 
 .service_section {
   margin-bottom: 83px;
+  margin-top: 100px;
 }
 .service_section .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-}
-.service_section .content::before {
-  z-index: -1;
-  content: "Special Offers";
-  position: absolute;
-  top: 18px;
-  right: 0;
-  left: 0;
-  overflow: hidden;
-  max-height: 150px;
-  color: #eaeaea;
-  font-size: 128px;
-  line-height: 150px;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: "Titillium Web", sans-serif;
 }
 .service_section .content .service_title {
   margin-bottom: 7px;
@@ -1351,6 +1342,179 @@ th {
   background: #0D3967;
 }
 
+.footersection .card {
+  border: none;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footersection .card .logo {
+  max-width: 250px;
+}
+.footersection .card .card-header {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  width: 100%;
+}
+.footersection .card .card-header a.card-title {
+  font-size: 34px;
+  line-height: 48px;
+  font-weight: 900;
+  font-family: "Titillium Web", sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+.footersection .card .card-header a.card-title:hover {
+  color: #008aeb;
+}
+.footersection .card .card-body a.card-text {
+  font-size: 19px;
+  line-height: 27px;
+  font-weight: 700;
+  font-family: "Titillium Web", sans-serif;
+  transition: all 0.5s ease-in-out;
+  color: #008aeb;
+}
+.footersection .card .card-body a.card-text:hover {
+  color: #252829;
+}
+.footersection .card .card-body p.card-text {
+  font-size: 19px;
+  line-height: 27px;
+  font-weight: 700;
+  font-family: "Titillium Web", sans-serif;
+}
+.footersection .card .getdirectionbtn {
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 700;
+  font-family: "Titillium Web", sans-serif;
+  padding: 15px 50px;
+  display: inline-block;
+  margin: 0 auto 1em;
+  border: 0;
+  background: #008aeb;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+  border-radius: 3px;
+  color: #fff;
+}
+.footersection .card .getdirectionbtn:hover {
+  background-color: #0D3967;
+}
+.footersection .card3 .card-title {
+  font-size: 19px;
+  line-height: 27px;
+  font-weight: 700;
+  font-family: "Titillium Web", sans-serif;
+}
+.footersection .card3 .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footersection .card3 .social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+.footersection .card3 .social-icons a:hover {
+  background: #000;
+}
+.footersection .card3 .social-icons a i {
+  font-size: 40px;
+  color: #5C79CA;
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footersection .card3 .social-icons a i.fa-facebook {
+  overflow: hidden;
+  background: #000;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+.footersection .card3 .social-icons a i.fa-google {
+  font-size: 25px;
+  color: #fff;
+}
+.footersection .card3 .social-icons a i.fa-google::before {
+  padding: 10px;
+  background: #E24B35;
+  border-radius: 50%;
+}
+.footersection .card3 .social-icons a i.fa-google:hover {
+  color: #000;
+}
+.footersection .card3 .social-icons a i.fa-yelp {
+  color: #fff;
+  width: 43px;
+  height: 43px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 25px;
+  background: #C73021;
+  transition: all 0.3s ease-in-out;
+}
+.footersection .card3 .social-icons a i.fa-yelp::before {
+  background: #C73021;
+  padding: 10px;
+  border-radius: 50%;
+}
+.footersection .card3 .social-icons a i.fa-yelp:hover {
+  color: #000;
+}
+
+.bottomfooter .bottomfootergrid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottomfooter .bottomfootergrid .card {
+  border: none;
+  background: transparent;
+}
+.bottomfooter .bottomfootergrid .card .card-text {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 900;
+  font-family: "Titillium Web", sans-serif;
+  color: #8b8b8b;
+}
+.bottomfooter .bottomfootergrid .card .card-body {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.bottomfooter .bottomfootergrid .card a {
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: 400;
+  font-family: "Titillium Web", sans-serif;
+  color: #8b8b8b;
+}
+
 @media only screen and (min-width: 768px) {
   .testimonial_section .testimonial_section_inner .section_header {
     position: relative;
@@ -1370,6 +1534,26 @@ th {
     line-height: 100px;
     font-family: "Titillium Web", sans-serif;
     text-align: center;
+  }
+  .service_section .content {
+    position: relative;
+  }
+  .service_section .content::before {
+    z-index: -1;
+    content: "Special Offers";
+    position: absolute;
+    top: 18px;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    max-height: 150px;
+    color: #eaeaea;
+    font-size: 128px;
+    line-height: 150px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
   }
   .appointment_section .section_header {
     position: relative;
@@ -1402,6 +1586,9 @@ th {
   .service-quality-card .row .col:nth-child(2) .card {
     border: 0px;
   }
+  .footersection .card {
+    align-items: start;
+  }
 }
 @media only screen and (max-width: 768px) {
   .navbar-collapse {
@@ -1431,6 +1618,26 @@ th {
   .testimonial_section .testimonial_section_inner .section_header .heading {
     font-size: 60px;
   }
+  .appointment_section .section_header .heading {
+    font-size: 60px;
+  }
+  .hero-section {
+    display: none;
+  }
+  .service_section {
+    margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .bottomfooter .bottomfootergrid {
+    flex-direction: column;
+  }
+  .appointment_section .section_header .heading {
+    font-size: 50px;
+  }
+  .appointment_section .section_header .subheading {
+    font-size: 35px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .navbar-collapse {
@@ -1439,11 +1646,48 @@ th {
   .navbar.navbar-wrapper .hederbuttons-section {
     flex-direction: column;
   }
-  .container-fluid {
-    padding: 0px;
-  }
   .testimonial_section .testimonial_section_inner .section_header .heading {
     font-size: 46px;
     line-height: 60px;
+  }
+  .footersection .card {
+    align-items: center;
+    text-align: center;
+  }
+  .footersection .card .card-header {
+    justify-content: center;
+  }
+  .bottomfooter .bottomfootergrid .card .card-body {
+    padding: 5px;
+  }
+  .bottomfooter .bottomfootergrid .card .card-text {
+    text-align: center;
+  }
+  .hero-section .content .herotxt {
+    font-size: 40px;
+  }
+  .hero-section .content .hero-title {
+    font-size: 46px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .appointment_section .section_header .heading {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .appointment_section .section_header .heading {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .appointment_section .section_header .subheading {
+    font-size: 25px;
+  }
+  .hero-section .content .herotxt {
+    font-size: 30px;
+  }
+  .hero-section .content .hero-title {
+    font-size: 40px;
+    line-height: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
