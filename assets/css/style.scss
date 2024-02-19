@@ -25,10 +25,9 @@
 
   }
 
-.card
-{
-    border-radius: 0px;
-}
+  .card {
+      border-radius: 0px;
+  }
 
   img {
       width: 100% !important;
@@ -66,7 +65,8 @@
 
 
   .top-header-address {
-      background: #001743;
+      background: #242323;
+      background: #A1FFC7;
       text-align: center;
       padding: 20px 0px;
 
@@ -81,7 +81,8 @@
               line-height: 36px;
               display: inline-block;
               text-transform: uppercase;
-              background: #008aeb;
+              background: #A1FFC7;
+              background: #242323;
               padding: 14px 12px;
               width: 763px;
               max-width: 100%;
@@ -94,7 +95,7 @@
           font-weight: 400;
           font-size: 24px;
           line-height: 43px;
-          color: #fff;
+          color: #000;
       }
 
   }
@@ -415,7 +416,7 @@
       .nav li.static:focus>a,
       .nav li.static:active>a,
       .nav li.static a.selected {
-          color: #008aeb;
+          color: #A1FFC7;
           text-decoration: none
       }
 
@@ -426,7 +427,7 @@
           left: 0;
           display: none;
           min-width: 220px;
-          background: #008aeb
+          background: #A1FFC7
       }
 
       .nav li.dynamic {
@@ -479,24 +480,24 @@
           .btn-appointments {
               display: block;
               padding: 10px 0 15px;
-              background: #008aeb;
+              background: #A1FFC7;
               text-align: center
           }
 
           .btn-appointments:hover {
-              background: #008aeb
+              background: #A1FFC7
           }
       }
 
       @media(min-width:992px) and (max-width:1223px) {
           .btn-appointments {
               padding-left: 12px;
-              background: #008aeb
+              background: #A1FFC7
           }
 
           .btn-appointments:hover,
           .btn-appointments:focus {
-              background: #008aeb
+              background: #A1FFC7
           }
       }
 
@@ -543,7 +544,7 @@
               overflow-y: auto;
               width: 60%;
               height: 100%;
-              background: #008aeb
+              background: #A1FFC7
           }
 
           .nav.nav-hidden,
@@ -762,9 +763,9 @@
                   font-family: 'Titillium Web', sans-serif;
                   text-decoration: underline;
                   transition: all .5s ease-in-out;
-                  &:hover 
-                  {
-                    text-decoration: none;
+
+                  &:hover {
+                      text-decoration: none;
                   }
               }
           }
@@ -784,7 +785,7 @@
           position: fixed;
           top: 10px;
           right: 10px;
-          background: rgba(0, 138, 235, 0.5);
+          background: #1bc35e;
           border-radius: 0px;
           padding: 10px 15px;
           z-index: 100;
@@ -807,12 +808,11 @@
 
           .logo {
 
-              img 
-              {
-                max-width: 200px;
-                max-height: 100px;
+              img {
+                  max-width: 200px;
+                  max-height: 100px;
               }
-            
+
 
           }
       }
@@ -827,6 +827,8 @@
           justify-content: center;
 
           .nav-item {
+         
+
               .nav-link {
                   font-size: 17px;
                   text-align: center;
@@ -834,7 +836,7 @@
                   transition: all .3s ease-out;
                   padding: 8px 20px;
                   font-style: normal;
-                  font-weight: 300;
+                  font-weight: 500;
                   line-height: 20px;
                   font-family: 'Titillium Web', sans-serif;
 
@@ -842,7 +844,7 @@
 
                   &.active,
                   &:hover {
-                      color: #008aeb;
+                      color: #1bc35e;
                       transition: all .3s ease-out;
                   }
 
@@ -852,6 +854,20 @@
                   padding-left: 0px;
               }
 
+              .dropdown-menu {
+                  max-width: 90%;
+                  margin-left: auto;
+                  width: 100%;
+                  background: #1bc35e;
+                  color: #fff;
+                  border-radius: 0px;
+                  border: none;
+
+                  .dropdown-item
+                  {
+                    color: #fff;
+                  }
+              }
           }
       }
 
@@ -868,7 +884,7 @@
               font-weight: 900;
               color: #eaeaea;
               font-family: 'Titillium Web', sans-serif;
-              background: #0d3967;
+              background: #1bc35e;
               padding: 10px 0 15px;
               text-align: center;
               display: block;
@@ -880,9 +896,9 @@
               font-size: 17px;
               line-height: 27px;
               font-weight: 700;
-              color: #fff;
+              color: #000;
               font-family: 'Titillium Web', sans-serif;
-              background: #008aeb;
+              background: #A1FFC7;
               padding: 10px 0 15px;
               text-align: center;
               display: block;
@@ -972,7 +988,7 @@
               font-family: 'Titillium Web', sans-serif;
               font-size: 48px;
               line-height: 67px;
-              color: #008aeb;
+              color: #1bc35e;
               font-weight: 300;
               text-align: center;
 
@@ -1003,20 +1019,20 @@
           .redeembtn {
               font-size: 18px;
               line-height: 29px;
-              color: #ffffff;
+              color: #000;
               font-family: 'Titillium Web', sans-serif;
               font-weight: 700;
               text-align: center;
               display: inline-block;
               padding: 15px 40px;
               margin: 10px auto;
-              background-color: #008aeb;
+              background-color: #A1FFC7;
               transition: all .5s ease-in-out;
               text-transform: uppercase;
               border-radius: 3px;
 
               &:hover {
-                  background: #0d3967;
+                  background: #74e19f;
               }
           }
       }
@@ -1039,7 +1055,7 @@
 
   .service-quality-card {
       margin-bottom: 40px;
-      background: #0d3967;
+      background: #A1FFC7;
       text-align: center;
 
       .row {
@@ -1066,9 +1082,16 @@
               .card-title {
                   font-size: 21px;
                   line-height: 21px;
-                  color: #ffffff;
+                  color: #000;
                   font-weight: 700;
                   font-family: 'Titillium Web', sans-serif;
+              }
+
+              .cardicon {
+                  i {
+                      font-size: 40px;
+                  }
+
               }
           }
       }
@@ -1115,7 +1138,7 @@
                   margin: 0px 40px;
                   border: none;
                   border-radius: 0px;
-                  background: #0D3967;
+                  background: #A1FFC7;
                   position: relative;
                   overflow: hidden;
 
@@ -1141,7 +1164,7 @@
                           left: 0px;
                           width: 100%;
                           height: 50%;
-                          background: linear-gradient(180deg, #0d396700, #0D3967);
+                          background: linear-gradient(180deg, #0d396700, #A1FFC7);
                       }
                   }
 
@@ -1155,10 +1178,10 @@
                       .card-title {
                           font-size: 26px;
                           line-height: 26px;
-                          color: #fff;
+                          color: #000;
                           font-weight: 700;
                           font-family: 'Titillium Web', sans-serif;
-                          border-bottom: 1px solid #3d6185;
+                          border-bottom: 1px solid #1bc35e;
                           padding-bottom: 15px;
                           margin-top: 22px;
                           margin-bottom: 11px;
@@ -1167,7 +1190,7 @@
                       .card-text {
                           font-size: 18px;
                           line-height: 29px;
-                          color: #fff;
+                          color: #000;
                           font-weight: 700;
                           font-family: 'Titillium Web', sans-serif;
 
@@ -1484,7 +1507,6 @@
           color: #2a2a2a;
           font-weight: 700;
           font-family: 'Titillium Web', sans-serif;
-          text-align: center;
           margin: 40px 0px;
       }
 
@@ -1492,29 +1514,33 @@
           font-size: 19px;
           line-height: 30px;
           color: #252829;
-          font-weight: 700;
+          font-weight: 500;
           font-family: 'Titillium Web', sans-serif;
-          text-align: center;
           margin-bottom: 40px;
       }
 
       .fleetbtn {
           display: flex;
-          justify-content: center;
+          justify-content: start;
           align-items: center;
 
           a {
               font-size: 18px;
               line-height: 29px;
-              color: #fff;
+              color: #000;
               font-weight: 700;
               font-family: 'Titillium Web', sans-serif;
               text-align: center;
               border-radius: 3px;
               text-transform: uppercase;
-              background: #0d3967;
+              background: #A1FFC7;
               padding: 15px 60px;
               display: inline-block;
+              transition: all .3s ease-in-out;
+
+              &:hover {
+                  background: #74e19f;
+              }
           }
       }
   }
@@ -1603,21 +1629,22 @@
           .submitbtn {
               font-size: 18px;
               line-height: 29px;
-              color: #fff;
+              color: #000;
               font-weight: 700;
               font-family: 'Titillium Web', sans-serif;
               text-transform: uppercase;
               text-align: center;
-              background-color: #008aeb;
+              background-color: #A1FFC7;
               display: inline-block;
               border-radius: 3px;
               margin: 0 auto 1em;
               margin-top: 40px;
               padding: 15px 60px;
               transition: all .5s ease-in-out;
+              opacity: 1;
 
               &:hover {
-                  background: #0D3967;
+                  background: #74e19f;
               }
           }
 
@@ -1626,6 +1653,7 @@
 
 
   .footersection {
+    margin-bottom: 20px;
       .card {
           border: none;
           background: transparent;
@@ -1633,10 +1661,10 @@
           justify-content: center;
           align-items: center;
 
-          .logo
-          {
-            max-width: 250px;
+          .logo {
+              max-width: 250px;
           }
+
           .card-header {
               background: transparent;
               display: flex;
@@ -1654,7 +1682,7 @@
                   transition: all .5s ease-in-out;
 
                   &:hover {
-                      color: #008aeb;
+                      color: #1bc35e;
                   }
               }
 
@@ -1667,10 +1695,11 @@
                   font-weight: 700;
                   font-family: 'Titillium Web', sans-serif;
                   transition: all .5s ease-in-out;
-                  color: #008aeb;
+                  color: #1bc35e;
+                  opacity: 1;
 
                   &:hover {
-                      color: #252829;
+                      opacity: .8;
                   }
               }
 
@@ -1691,16 +1720,16 @@
               display: inline-block;
               margin: 0 auto 1em;
               border: 0;
-              background: #008aeb;
+              background: #A1FFC7;
               text-align: center;
               text-transform: uppercase;
               transition: all .5s ease 0s;
               border-radius: 3px;
-              color: #fff;
+              color: #000;
 
-              &:hover 
-              {
-                background-color: #0D3967;
+              &:hover {
+                  background: #74e19f;
+
               }
           }
       }
@@ -1762,9 +1791,9 @@
                               background: #E24B35;
                               border-radius: 50%;
                           }
-                          &:hover 
-                          {
-                            color: #000;
+
+                          &:hover {
+                              color: #000;
                           }
                       }
 
@@ -1790,9 +1819,9 @@
                               padding: 10px;
                               border-radius: 50%;
                           }
-                          &:hover 
-                          {
-                            color: #000;
+
+                          &:hover {
+                              color: #000;
                           }
                       }
                   }
@@ -1803,43 +1832,40 @@
 
   }
 
-  .bottomfooter
-  {
-    .bottomfootergrid
-    {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .card 
-        {
-            border: none;
-            background: transparent;
-          
-            .card-text
-            {
-                font-size: 15px;
-                line-height: 21px;
-                font-weight: 900;
-                font-family: 'Titillium Web', sans-serif;
-                color: #8b8b8b;
-            }
-            .card-body
-            {
-                display: flex;
-                align-items: center;
-                flex-direction: row;
-                gap: 20px;
-            }
-            a 
-            {
-                font-size: 11px;
-                line-height: 15px;
-                font-weight: 400;
-                font-family: 'Titillium Web', sans-serif;
-                color: #8b8b8b;
-            }
-        }
-    }
+  .bottomfooter {
+      .bottomfootergrid {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .card {
+              border: none;
+              background: transparent;
+
+              .card-text {
+                  font-size: 15px;
+                  line-height: 21px;
+                  font-weight: 500;
+                  font-family: 'Titillium Web', sans-serif;
+                  color: #8b8b8b;
+              }
+
+              .card-body {
+                  display: flex;
+                  align-items: center;
+                  flex-direction: row;
+                  gap: 20px;
+              }
+
+              a {
+                  font-size: 13px;
+                  line-height: 15px;
+                  font-weight: 400;
+                  font-family: 'Titillium Web', sans-serif;
+                  color: #8b8b8b;
+              }
+          }
+      }
   }
 
 
@@ -1866,27 +1892,27 @@
           }
       }
 
-      .service_section .content
-      {
-        position: relative;
-        &::before {
-            z-index: -1;
-            content: "Special Offers";
-            position: absolute;
-            top: 18px;
-            right: 0;
-            left: 0;
-            overflow: hidden;
-            max-height: 150px;
-            color: #eaeaea;
-            font-size: 128px;
-            line-height: 150px;
-            font-weight: 900;
-            text-transform: uppercase;
-            text-align: center;
-            font-family: 'Titillium Web', sans-serif;
+      .service_section .content {
+          position: relative;
 
-        }
+          &::before {
+              z-index: -1;
+              content: "Special Offers";
+              position: absolute;
+              top: 18px;
+              right: 0;
+              left: 0;
+              overflow: hidden;
+              max-height: 150px;
+              color: #eaeaea;
+              font-size: 128px;
+              line-height: 150px;
+              font-weight: 900;
+              text-transform: uppercase;
+              text-align: center;
+              font-family: 'Titillium Web', sans-serif;
+
+          }
       }
 
       .appointment_section .section_header {
@@ -1924,9 +1950,9 @@
       .service-quality-card .row .col:nth-child(2) .card {
           border: 0px;
       }
-      .footersection .card
-      {
-        align-items: start;
+
+      .footersection .card {
+          align-items: start;
       }
   }
 
@@ -1934,7 +1960,7 @@
       .navbar-collapse {
           position: fixed;
           top: 0px;
-          background: #008AEB;
+          background: #74e19f;
           width: 50%;
           right: 0px;
           z-index: 99;
@@ -1951,7 +1977,7 @@
           padding: 8px 20px !important;
           margin: 5px 0px;
 
-          &.active {
+          &.active, &:hover {
               color: #000;
           }
       }
@@ -1963,34 +1989,33 @@
       .testimonial_section .testimonial_section_inner .section_header .heading {
           font-size: 60px;
       }
-      .appointment_section .section_header .heading
-      {
-        font-size: 60px;
+
+      .appointment_section .section_header .heading {
+          font-size: 60px;
       }
-      .hero-section
-      {
-        display: none;
+
+      .hero-section {
+          display: none;
       }
-      .service_section
-      {
-        margin-top: 0px;
+
+      .service_section {
+          margin-top: 0px;
       }
 
   }
 
   @media only screen and (max-width: 650px) {
-    .bottomfooter .bottomfootergrid
-    {
-        flex-direction: column;
-    }
-    .appointment_section .section_header .heading
-    {
-      font-size: 50px;
-    }
-    .appointment_section .section_header .subheading
-    {
-        font-size: 35px;
-    }
+      .bottomfooter .bottomfootergrid {
+          flex-direction: column;
+      }
+
+      .appointment_section .section_header .heading {
+          font-size: 50px;
+      }
+
+      .appointment_section .section_header .subheading {
+          font-size: 35px;
+      }
 
   }
 
@@ -2003,62 +2028,62 @@
           flex-direction: column;
       }
 
-    
+
 
       .testimonial_section .testimonial_section_inner .section_header .heading {
           font-size: 46px;
           line-height: 60px;
       }
-      .footersection .card
-      {
-        align-items: center;
-        text-align: center;
+
+      .footersection .card {
+          align-items: center;
+          text-align: center;
       }
-      .footersection .card .card-header
-      {
-        justify-content: center;
+
+      .footersection .card .card-header {
+          justify-content: center;
       }
-      .bottomfooter .bottomfootergrid .card .card-body
-      {
-        padding: 5px;
+
+      .bottomfooter .bottomfootergrid .card .card-body {
+          padding: 5px;
       }
-      .bottomfooter .bottomfootergrid .card .card-text
-      {
-        text-align: center;
+
+      .bottomfooter .bottomfootergrid .card .card-text {
+          text-align: center;
       }
-      .hero-section .content .herotxt
-      {
-        font-size: 40px;
+
+      .hero-section .content .herotxt {
+          font-size: 40px;
       }
-      .hero-section .content .hero-title
-      {
-        font-size: 46px;
+
+      .hero-section .content .hero-title {
+          font-size: 46px;
 
       }
   }
+
   @media only screen and (max-width: 450px) {
-    .appointment_section .section_header .heading
-    {
-        font-size: 40px;
-    }  
-}
+      .appointment_section .section_header .heading {
+          font-size: 40px;
+      }
+  }
+
   @media only screen and (max-width: 400px) {
-    .appointment_section .section_header .heading
-    {
-        font-size: 35px;
-        line-height: 40px;
-    }  
-    .appointment_section .section_header .subheading
-    {
-        font-size: 25px;
-    }
-    .hero-section .content .herotxt
-    {
-        font-size: 30px;
-    }
-    .hero-section .content .hero-title
-    {
-        font-size: 40px;
-        line-height: 50px;
-    }
-}
+      .appointment_section .section_header .heading {
+          font-size: 35px;
+          line-height: 40px;
+      }
+
+      .appointment_section .section_header .subheading {
+          font-size: 25px;
+      }
+
+      .hero-section .content .herotxt {
+          font-size: 30px;
+      }
+
+      .hero-section .content .hero-title {
+          font-size: 40px;
+          line-height: 50px;
+      }
+  }
