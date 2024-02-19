@@ -794,7 +794,7 @@
 
       .navbar-brand {
           display: flex;
-          justify-content: center;
+          justify-content: start;
           align-items: center;
           font-size: 2.7rem;
           font-family: 'Titillium Web', sans-serif;
@@ -827,7 +827,7 @@
           justify-content: center;
 
           .nav-item {
-         
+
 
               .nav-link {
                   font-size: 17px;
@@ -863,9 +863,8 @@
                   border-radius: 0px;
                   border: none;
 
-                  .dropdown-item
-                  {
-                    color: #fff;
+                  .dropdown-item {
+                      color: #fff;
                   }
               }
           }
@@ -1123,11 +1122,11 @@
 
           .section-details {
               font-size: 18px;
-              line-height: 32px;
+              line-height: 25px;
               color: #252829;
-              font-weight: 700;
+              font-weight: 500;
               text-align: center;
-              font-family: 'Titillium Web', sans-serif;
+              font-family: "Titillium Web", sans-serif;
           }
 
       }
@@ -1191,7 +1190,7 @@
                           font-size: 18px;
                           line-height: 29px;
                           color: #000;
-                          font-weight: 700;
+                          font-weight: 500;
                           font-family: 'Titillium Web', sans-serif;
 
                       }
@@ -1653,7 +1652,8 @@
 
 
   .footersection {
-    margin-bottom: 20px;
+      margin-bottom: 20px;
+
       .card {
           border: none;
           background: transparent;
@@ -1869,6 +1869,18 @@
   }
 
 
+
+//   services page 
+.breadcrumb
+{
+    font-size: 2.7rem;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 3.5rem;
+}
+
+
   @media only screen and (min-width: 768px) {
       .testimonial_section .testimonial_section_inner .section_header {
           position: relative;
@@ -1977,13 +1989,19 @@
           padding: 8px 20px !important;
           margin: 5px 0px;
 
-          &.active, &:hover {
+          &.active,
+          &:hover {
               color: #000;
           }
       }
 
       .top-header-address {
           padding-top: 70px;
+      }
+
+      .top-header-address .heading-title h2 {
+          font-size: 30px;
+          font-weight: 700;
       }
 
       .testimonial_section .testimonial_section_inner .section_header .heading {
@@ -2029,6 +2047,9 @@
       }
 
 
+      .top-header-address .heading-title h2 {
+          font-size: 20px;
+      }
 
       .testimonial_section .testimonial_section_inner .section_header .heading {
           font-size: 46px;

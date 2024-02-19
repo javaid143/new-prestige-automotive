@@ -59,7 +59,8 @@ th {
 }
 
 .top-header-address {
-  background: #001743;
+  background: #242323;
+  background: #A1FFC7;
   text-align: center;
   padding: 20px 0px;
 }
@@ -74,7 +75,8 @@ th {
   line-height: 36px;
   display: inline-block;
   text-transform: uppercase;
-  background: #008aeb;
+  background: #A1FFC7;
+  background: #242323;
   padding: 14px 12px;
   width: 763px;
   max-width: 100%;
@@ -85,7 +87,7 @@ th {
   font-weight: 400;
   font-size: 24px;
   line-height: 43px;
-  color: #fff;
+  color: #000;
 }
 
 .danaheader.header {
@@ -352,7 +354,7 @@ th {
 .danaheader.header .nav li.static:focus > a,
 .danaheader.header .nav li.static:active > a,
 .danaheader.header .nav li.static a.selected {
-  color: #008aeb;
+  color: #A1FFC7;
   text-decoration: none;
 }
 .danaheader.header .nav ul.dynamic {
@@ -362,7 +364,7 @@ th {
   left: 0;
   display: none;
   min-width: 220px;
-  background: #008aeb;
+  background: #A1FFC7;
 }
 .danaheader.header .nav li.dynamic {
   display: block;
@@ -406,21 +408,21 @@ th {
   .danaheader.header .btn-appointments {
     display: block;
     padding: 10px 0 15px;
-    background: #008aeb;
+    background: #A1FFC7;
     text-align: center;
   }
   .danaheader.header .btn-appointments:hover {
-    background: #008aeb;
+    background: #A1FFC7;
   }
 }
 @media (min-width: 992px) and (max-width: 1223px) {
   .danaheader.header .btn-appointments {
     padding-left: 12px;
-    background: #008aeb;
+    background: #A1FFC7;
   }
   .danaheader.header .btn-appointments:hover,
   .danaheader.header .btn-appointments:focus {
-    background: #008aeb;
+    background: #A1FFC7;
   }
 }
 @media (min-width: 992px) {
@@ -460,7 +462,7 @@ th {
     overflow-y: auto;
     width: 60%;
     height: 100%;
-    background: #008aeb;
+    background: #A1FFC7;
   }
   .danaheader.header .nav.nav-hidden,
   .danaheader.header .nav.nav-visible {
@@ -649,7 +651,7 @@ th {
   position: fixed;
   top: 10px;
   right: 10px;
-  background: rgba(0, 138, 235, 0.5);
+  background: #1bc35e;
   border-radius: 0px;
   padding: 10px 15px;
   z-index: 100;
@@ -687,17 +689,29 @@ th {
   transition: all 0.3s ease-out;
   padding: 8px 20px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 20px;
   font-family: "Titillium Web", sans-serif;
   color: #252525;
 }
 .navbar.navbar-wrapper .navbar-nav .nav-item .nav-link.active, .navbar.navbar-wrapper .navbar-nav .nav-item .nav-link:hover {
-  color: #008aeb;
+  color: #1bc35e;
   transition: all 0.3s ease-out;
 }
 .navbar.navbar-wrapper .navbar-nav .nav-item:first-child a {
   padding-left: 0px;
+}
+.navbar.navbar-wrapper .navbar-nav .nav-item .dropdown-menu {
+  max-width: 90%;
+  margin-left: auto;
+  width: 100%;
+  background: #1bc35e;
+  color: #fff;
+  border-radius: 0px;
+  border: none;
+}
+.navbar.navbar-wrapper .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  color: #fff;
 }
 .navbar.navbar-wrapper .hederbuttons-section {
   display: flex;
@@ -712,7 +726,7 @@ th {
   font-weight: 900;
   color: #eaeaea;
   font-family: "Titillium Web", sans-serif;
-  background: #0d3967;
+  background: #1bc35e;
   padding: 10px 0 15px;
   text-align: center;
   display: block;
@@ -722,9 +736,9 @@ th {
   font-size: 17px;
   line-height: 27px;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   font-family: "Titillium Web", sans-serif;
-  background: #008aeb;
+  background: #A1FFC7;
   padding: 10px 0 15px;
   text-align: center;
   display: block;
@@ -802,7 +816,7 @@ th {
   font-family: "Titillium Web", sans-serif;
   font-size: 48px;
   line-height: 67px;
-  color: #008aeb;
+  color: #1bc35e;
   font-weight: 300;
   text-align: center;
 }
@@ -828,20 +842,20 @@ th {
 .service_section .content .redeembtn {
   font-size: 18px;
   line-height: 29px;
-  color: #ffffff;
+  color: #000;
   font-family: "Titillium Web", sans-serif;
   font-weight: 700;
   text-align: center;
   display: inline-block;
   padding: 15px 40px;
   margin: 10px auto;
-  background-color: #008aeb;
+  background-color: #A1FFC7;
   transition: all 0.5s ease-in-out;
   text-transform: uppercase;
   border-radius: 3px;
 }
 .service_section .content .redeembtn:hover {
-  background: #0d3967;
+  background: #74e19f;
 }
 .service_section #text {
   display: none;
@@ -857,7 +871,7 @@ th {
 
 .service-quality-card {
   margin-bottom: 40px;
-  background: #0d3967;
+  background: #A1FFC7;
   text-align: center;
 }
 .service-quality-card .row .col {
@@ -880,9 +894,12 @@ th {
 .service-quality-card .card .card-body .card-title {
   font-size: 21px;
   line-height: 21px;
-  color: #ffffff;
+  color: #000;
   font-weight: 700;
   font-family: "Titillium Web", sans-serif;
+}
+.service-quality-card .card .card-body .cardicon i {
+  font-size: 40px;
 }
 .service-quality-card .row .col:nth-child(2) .card {
   border-left: 3px solid #fff;
@@ -915,7 +932,7 @@ th {
   margin: 0px 40px;
   border: none;
   border-radius: 0px;
-  background: #0D3967;
+  background: #A1FFC7;
   position: relative;
   overflow: hidden;
 }
@@ -940,7 +957,7 @@ th {
   left: 0px;
   width: 100%;
   height: 50%;
-  background: linear-gradient(180deg, rgba(13, 57, 103, 0), #0D3967);
+  background: linear-gradient(180deg, rgba(13, 57, 103, 0), #A1FFC7);
 }
 .services-cards .row .col .card img {
   -o-border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.2), #000);
@@ -952,10 +969,10 @@ th {
 .services-cards .row .col .card .card-body .card-title {
   font-size: 26px;
   line-height: 26px;
-  color: #fff;
+  color: #000;
   font-weight: 700;
   font-family: "Titillium Web", sans-serif;
-  border-bottom: 1px solid #3d6185;
+  border-bottom: 1px solid #1bc35e;
   padding-bottom: 15px;
   margin-top: 22px;
   margin-bottom: 11px;
@@ -963,7 +980,7 @@ th {
 .services-cards .row .col .card .card-body .card-text {
   font-size: 18px;
   line-height: 29px;
-  color: #fff;
+  color: #000;
   font-weight: 700;
   font-family: "Titillium Web", sans-serif;
 }
@@ -1221,35 +1238,37 @@ th {
   color: #2a2a2a;
   font-weight: 700;
   font-family: "Titillium Web", sans-serif;
-  text-align: center;
   margin: 40px 0px;
 }
 .fleet_services_section .fleetdesc {
   font-size: 19px;
   line-height: 30px;
   color: #252829;
-  font-weight: 700;
+  font-weight: 500;
   font-family: "Titillium Web", sans-serif;
-  text-align: center;
   margin-bottom: 40px;
 }
 .fleet_services_section .fleetbtn {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 .fleet_services_section .fleetbtn a {
   font-size: 18px;
   line-height: 29px;
-  color: #fff;
+  color: #000;
   font-weight: 700;
   font-family: "Titillium Web", sans-serif;
   text-align: center;
   border-radius: 3px;
   text-transform: uppercase;
-  background: #0d3967;
+  background: #A1FFC7;
   padding: 15px 60px;
   display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.fleet_services_section .fleetbtn a:hover {
+  background: #74e19f;
 }
 
 .appointment_section {
@@ -1326,23 +1345,27 @@ th {
 .appointment_section form .submitbtn {
   font-size: 18px;
   line-height: 29px;
-  color: #fff;
+  color: #000;
   font-weight: 700;
   font-family: "Titillium Web", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  background-color: #008aeb;
+  background-color: #A1FFC7;
   display: inline-block;
   border-radius: 3px;
   margin: 0 auto 1em;
   margin-top: 40px;
   padding: 15px 60px;
   transition: all 0.5s ease-in-out;
+  opacity: 1;
 }
 .appointment_section form .submitbtn:hover {
-  background: #0D3967;
+  background: #74e19f;
 }
 
+.footersection {
+  margin-bottom: 20px;
+}
 .footersection .card {
   border: none;
   background: transparent;
@@ -1369,7 +1392,7 @@ th {
   transition: all 0.5s ease-in-out;
 }
 .footersection .card .card-header a.card-title:hover {
-  color: #008aeb;
+  color: #1bc35e;
 }
 .footersection .card .card-body a.card-text {
   font-size: 19px;
@@ -1377,10 +1400,11 @@ th {
   font-weight: 700;
   font-family: "Titillium Web", sans-serif;
   transition: all 0.5s ease-in-out;
-  color: #008aeb;
+  color: #1bc35e;
+  opacity: 1;
 }
 .footersection .card .card-body a.card-text:hover {
-  color: #252829;
+  opacity: 0.8;
 }
 .footersection .card .card-body p.card-text {
   font-size: 19px;
@@ -1397,15 +1421,15 @@ th {
   display: inline-block;
   margin: 0 auto 1em;
   border: 0;
-  background: #008aeb;
+  background: #A1FFC7;
   text-align: center;
   text-transform: uppercase;
   transition: all 0.5s ease 0s;
   border-radius: 3px;
-  color: #fff;
+  color: #000;
 }
 .footersection .card .getdirectionbtn:hover {
-  background-color: #0D3967;
+  background: #74e19f;
 }
 .footersection .card3 .card-title {
   font-size: 19px;
@@ -1498,7 +1522,7 @@ th {
 .bottomfooter .bottomfootergrid .card .card-text {
   font-size: 15px;
   line-height: 21px;
-  font-weight: 900;
+  font-weight: 500;
   font-family: "Titillium Web", sans-serif;
   color: #8b8b8b;
 }
@@ -1509,7 +1533,7 @@ th {
   gap: 20px;
 }
 .bottomfooter .bottomfootergrid .card a {
-  font-size: 11px;
+  font-size: 13px;
   line-height: 15px;
   font-weight: 400;
   font-family: "Titillium Web", sans-serif;
@@ -1595,7 +1619,7 @@ th {
   .navbar-collapse {
     position: fixed;
     top: 0px;
-    background: #008AEB;
+    background: #74e19f;
     width: 50%;
     right: 0px;
     z-index: 99;
@@ -1610,7 +1634,7 @@ th {
     padding: 8px 20px !important;
     margin: 5px 0px;
   }
-  .navbar.navbar-wrapper .navbar-nav .nav-item .nav-link.active {
+  .navbar.navbar-wrapper .navbar-nav .nav-item .nav-link.active, .navbar.navbar-wrapper .navbar-nav .nav-item .nav-link:hover {
     color: #000;
   }
   .top-header-address {
